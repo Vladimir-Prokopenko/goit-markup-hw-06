@@ -609,20 +609,23 @@
           </ul>
         </div>
 
-        <form>
-          <label for="subscription-email">Подпишитесь на рассылку</label>
-          <input
-            type="email"
-            name="subscription-email"
-            id="subscription-email"
-          />
+        <form class="footer-form">
+          <p class="footer-form-text">Подпишитесь на рассылку</p>
+          <div class="footer-form-group">
+            <input
+              type="email"
+              name="subscription-email"
+              placeholder="E-mail"
+              class="footer-form-input"
+            />
 
-          <button type="submit">
-            Подписаться
-            <svg class="footer-social-svg" width="20" height="20">
-              <use href="./images/icons.svg#icon-linkedin-footer"></use>
-            </svg>
-          </button>
+            <button type="submit" class="footer-form-button">
+              Подписаться
+              <svg class="footer-form-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscription-email"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
@@ -635,15 +638,44 @@
           </svg>
         </button>
 
-        <form class="js-speaker-form">
-          <label for="user-name">Имя</label>
-          <input type="text" name="user-name" id="user-name" />
+        <form class="js-speaker-form modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Имя</label>
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              class="modal-input"
+            />
+          </div>
 
-          <label for="user-tel">Телефон</label>
-          <input type="tel" name="user-tel" id="user-tel" />
+          <div class="modal-field">
+            <label for="user-tel" class="modal-label">Телефон</label>
+            <input
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              class="modal-input"
+            />
+          </div>
 
-          <label for="user-email">Почта</label>
-          <input type="email" name="user-email" id="user-email" />
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Почта</label>
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              class="modal-input"
+            />
+          </div>
+
+          <label for="user-textarea">Комментарий</label>
+          <textarea
+            name="user-textarea"
+            id="user-textarea"
+            class="modal-textarea"
+            placeholder="Введите текст"
+          ></textarea>
 
           <input
             type="checkbox"

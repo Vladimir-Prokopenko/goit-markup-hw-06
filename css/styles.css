@@ -381,7 +381,7 @@ img {
 
 .modal-input:focus {
   border: 1px solid var(--accent-color);
-  outline: var(--accent-color);
+  outline: none;
 }
 
 .modal-input:focus + .modal-svg {
@@ -420,7 +420,7 @@ img {
 
 .modal-textarea:focus {
   border: 1px solid var(--accent-color);
-  outline: var(--accent-color);
+  outline: none;
 }
 
 .choice-label {
@@ -891,10 +891,12 @@ img {
   margin: 0;
   padding: 15px 16px;
   width: calc(100% - 212px);
+  color: var(--prime-color);
   background-color: var(--prime-background);
 
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .footer-form-input::placeholder {

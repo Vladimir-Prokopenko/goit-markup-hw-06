@@ -491,6 +491,26 @@
           </ul>
           <ul></ul>
         </div>
+        <div class="footer-subscribe">
+          <label class="footer-subscribe-label" for="input-subscribe">
+            <p class="footer-subscribe-text"><b>Підпишіться на розсилку</b></p>
+          </label>
+          <div class="footer-subscribe-wrap">
+            <input
+              class="input-subscribe"
+              id="input-subscribe"
+              type="text"
+              name="subscribe"
+              placeholder="E-mail"
+            />
+            <button class="footer-subscribe-btn" type="submit">
+              Підписатися
+              <svg class="subscribe-svg">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop-hero is-hidden" data-modal>
@@ -500,14 +520,63 @@
             <use href="./images/icons.svg#icon-close-modal"></use>
           </svg>
         </button>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis
-          debitis quibusdam doloremque perspiciatis distinctio consequuntur
-          nobis ipsa dolore earum quisquam qui eveniet maxime ad, numquam libero
-          quos, veritatis accusantium similique tempora nemo? Quo consequuntur
-          iusto eius aut facilis doloribus aliquam quae vitae dolor
-          voluptatibus? Accusamus corrupti cumque odio illo.
-        </p>
+        <form class="modal-hero-form">
+          <p class="modal-hero-title">
+            <b>Залиште свої дані, ми вам передзвонимо</b>
+          </p>
+          <label class="modal-hero-label">
+            Ім'я
+            <div class="hero-input-wrap">
+              <input class="modal-hero-input" type="text" name="user-name" />
+              <svg class="modal-hero-svg">
+                <use href="./images/icons.svg#icon-modal-person"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="modal-hero-label">
+            Телефон
+            <div class="hero-input-wrap">
+              <input class="modal-hero-input" type="tel" name="user-tel" />
+              <svg class="modal-hero-svg">
+                <use href="./images/icons.svg#icon-modal-phone"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="modal-hero-label">
+            Пошта
+            <div class="hero-input-wrap">
+              <input class="modal-hero-input" type="email" name="user-email" />
+              <svg class="modal-hero-svg">
+                <use href="./images/icons.svg#icon-modal-email"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="modal-textarea-label"
+            >Коментар
+            <textarea
+              class="modal-hero-textarea"
+              name="user-textarea"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+          <div class="modal-hero-conditions">
+            <label class="conditions-text">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="conditions-text-checkbox"
+              />
+              <span class="checkbox-span">
+                <svg class="checkbox-span-svg">
+                  <use href="./images/icons.svg#icon-modal-check"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю &#160;
+              <a class="conditions-link" href="#">Умови договору</a>
+            </label>
+          </div>
+          <button class="conditions-btn" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
